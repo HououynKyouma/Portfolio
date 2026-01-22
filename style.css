@@ -1,0 +1,84 @@
+body {
+    height: 100vh; /* Le body prend 100% de la hauteur de l'écran (viewport height) */
+    display: flex; /* Active flexbox pour organiser/aligner les éléments enfants */
+    flex-direction: column; /* Place les éléments les uns en dessous des autres (en colonne) */
+    justify-content: center; /* Centre verticalement (axe principal quand on est en column) */
+    align-items: center; /* Centre horizontalement (axe secondaire) */
+    margin: 0; /* Enlève la marge par défaut du navigateur autour de la page */
+    background-image: url("arriereplan.png"); /* Met une image en arrière-plan */
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed; /* L'image reste fixe quand on scroll (effet "parallax") */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police d'écriture */
+}
+
+.size{
+    color: rgb(67, 162, 67); /* Couleur verte du texte */
+    font-size: 56px; /* Taille du texte */
+    margin-top: -500px; /* Marge négative : remonte l'élément vers le haut */
+}
+
+.subtitle {
+    position: absolute; /* Sort l'élément du flux normal et permet de le placer librement */
+    margin-top: -430px; /* Remonte le sous-titre */
+    font-size: 20px; /* Taille du texte */
+}
+
+.accueil {
+    position: absolute; /* Positionnement libre */
+    margin-top: -380px; /* Remonte l'élément */
+    left: 20px; /* Décale depuis la gauche */
+    font-size: 16px; /* Taille du texte */
+}
+
+.btn-apropos {
+    position: absolute; /* Positionnement libre */
+    top: 200px; /* Distance depuis le haut */
+    left: 20px; /* Distance depuis la gauche */
+    padding: 12px 24px; /* Espace intérieur du bouton (haut/bas puis gauche/droite) */
+    font-size: 16px; /* Taille du texte du bouton */
+    background-color: rgb(67, 162, 67); /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Arrondit les coins */
+    cursor: pointer; /* Curseur en forme de main au survol */
+}
+
+.btn-apropos:hover {
+    background-color: rgb(50, 130, 50); /* Couleur du bouton quand la souris est dessus */
+}
+
+.btn-projets {
+    position: absolute; /* Positionnement libre */
+    top: 250px; /* Distance depuis le haut */
+    left: 20px; /* Distance depuis la gauche */
+    padding: 12px 24px; /* Espace intérieur */
+    font-size: 16px; /* Taille du texte */
+    background-color: rgb(67, 162, 67); /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Main au survol */
+}
+
+.btn-projets:hover {
+    background-color: rgb(50, 130, 50); /* Couleur au survol */
+}
+
+.btn-contact {
+    position: absolute; /* Positionnement libre */
+    top: 300px; /* Distance depuis le haut */
+    left: 20px; /* Distance depuis la gauche */
+    padding: 12px 24px; /* Espace intérieur */
+    font-size: 16px; /* Taille du texte */
+    background-color: rgb(67, 162, 67); /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Main au survol */
+}
+
+.btn-contact:hover {
+    background-color: rgb(50, 130, 50); /* Couleur au survol */
+}

@@ -1,0 +1,123 @@
+body {
+    height: auto; /* S'adapte au contenu */
+    min-height: 100vh; /* Minimum hauteur écran */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Organisation en colonne */
+    margin: 0; /* Pas de marge par défaut */
+    background-image: url("arriereplan.png"); /* Fond */
+    background-size: cover; /* Couvre l'écran */
+    background-position: center; /* Centre */
+    background-attachment: fixed; /* Fixe au scroll */
+    background-repeat: no-repeat; /* Ne répète pas */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police */
+    padding: 40px; /* Espace intérieur */
+}
+
+.size {
+    color: rgb(67, 162, 67); /* Couleur titre */
+    font-size: 56px; /* Taille */
+    text-align: center; /* Centré */
+    margin: 40px 0 40px 0; /* Marges */
+}
+
+.btn-retour {
+    position: fixed; /* Fixé même au scroll */
+    bottom: 30px; /* Distance bas */
+    left: 20px; /* Distance gauche */
+    padding: 12px 24px; /* Espace intérieur */
+    font-size: 16px; /* Taille */
+    background-color: rgb(67, 162, 67); /* Fond vert */
+    color: white; /* Texte blanc */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Main */
+}
+
+.btn-retour:hover {
+    background-color: rgb(50, 130, 50); /* Survol */
+}
+
+.projets-container {
+    max-width: 700px; /* Largeur max */
+    margin: 0 auto; /* Centre le bloc */
+}
+
+.projet-item {
+    margin-bottom: 50px; /* Espace entre projets */
+    padding-bottom: 30px; /* Espace intérieur bas */
+    border-bottom: 2px solid rgba(67, 162, 67, 0.3); /* Ligne séparatrice */
+}
+
+.projet-item:last-child {
+    border-bottom: none; /* Pas de bordure sur le dernier */
+}
+
+.projet-item h2 {
+    color: rgb(67, 162, 67); /* Couleur titres projet */
+    font-size: 22px; /* Taille */
+    margin: 0 0 15px 0; /* Espace sous */
+}
+
+.projet-item p {
+    color: black; /* Couleur texte */
+    font-size: 14px; /* Taille */
+    line-height: 1.6; /* Lisibilité */
+    margin: 0 0 20px 0; /* Espace sous */
+}
+
+.galerie {
+    display: grid; /* Grid */
+    grid-template-columns: 1fr; /* 1 colonne */
+    gap: 15px; /* Espacement */
+    max-width: 250px; /* Largeur max */
+}
+
+.galerie img {
+    width: 200px; /* Largeur */
+    height: 150px; /* Hauteur */
+    object-fit: cover; /* Cadrage */
+    border-radius: 8px; /* Arrondi */
+}
+
+.clickable-img {
+    cursor: pointer; /* Main */
+    transition: transform 0.2s ease; /* Animation */
+}
+
+.clickable-img:hover {
+    transform: scale(1.05); /* Zoom au survol */
+}
+
+.modal {
+    display: none; /* Cachée par défaut */
+    position: fixed; /* Plein écran */
+    z-index: 1000; /* Au-dessus */
+    left: 0; /* Collé gauche */
+    top: 0; /* Collé haut */
+    width: 100%; /* Largeur total */
+    height: 100%; /* Hauteur total */
+    background-color: rgba(0, 0, 0, 0.9); /* Fond sombre */
+    justify-content: center; /* Centre horizontalement (si flex) */
+    align-items: center; /* Centre verticalement */
+}
+
+.modal-content {
+    max-width: 90%; /* Limite largeur */
+    max-height: 90%; /* Limite hauteur */
+    object-fit: contain; /* Tout visible */
+    border-radius: 8px; /* Arrondi */
+}
+
+.close {
+    position: absolute; /* Placé par-dessus */
+    top: 20px; /* Haut */
+    right: 30px; /* Droite */
+    font-size: 40px; /* Taille */
+    font-weight: bold; /* Gras */
+    color: white; /* Blanc */
+    cursor: pointer; /* Main */
+}
+
+.close:hover {
+    color: rgb(67, 162, 67); /* Vert au survol */
+}

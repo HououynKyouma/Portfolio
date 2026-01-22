@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos de moi</title>
+    <link rel="stylesheet" href="style-apropos.css">
+</head>
+<body>
+    <button class="btn-retour" onclick="window.location.href='index.html'">← Retour</button>
+    <h1 class="size">À propos de moi</h1>
+    <p class="subtitle">Mes projets et expériences</p>
+    <div class="presentation">
+        <h2>Présentation personelle:</h2>
+
+        <p>Je m'appel Marwane, j'ai 17 ans et je suis un élève en filière technologique en STI2D, en spécialité SIN et je m'intéresse beaucoup àla programmation, à l'informatique mais surtout en cybersécurité, j'aimerai faire un BTS CIEL en alternance si possible ! J'espère que mon petit site vous plaira. 
+        </p>
+    </div>
+    <div class="skills-section">
+        <h2>Mes compétences</h2>
+        <div class="skill">
+            <label>Arduino</label>
+            <div class="progress-bar">
+                <div class="progress" style="width: 65%;"></div>
+            </div>
+            <span class="percentage">65%</span>
+        </div>
+        <div class="skill">
+            <label>HTML</label>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+            <span class="percentage">80%</span>
+        </div>
+        <div class="skill">
+            <label>CSS</label>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+            <span class="percentage">70%</span>
+        </div>
+        <div class="skill">
+            <label>Python</label>
+            <div class="progress-bar">
+                <div class="progress" style="width: 0%;"></div>
+            </div>
+            <span class="percentage">À venir</span>
+        </div>
+    </div>
+    <h2 style="margin-top: 50px; color: rgb(67, 162, 67);">Mes projets :</h2>
+    <div class="projets-section">
+        <h3>Projet RoboCup – 1STI2D</h3>
+        <p class="projet-description">En début d'année, nous avions comme projet de créer un robot capable de suivre une ligne, d'éviter des obstacles et de respecter les différentes contraintes appliquées dans le règlement. Nous avons dû schématiser le châssis du robot sur SolidWorks, trouver les noms des capteurs, comprendre à quoi ils servent et les faire fonctionner en les codant. Nous avons également dû réussir le câblage, tout souder sur le châssis et faire en sorte que le robot puisse réaliser les différentes étapes de la RoboCup.</p>
+        <div class="galerie">
+            <img class="clickable-img" src="chassis.jpg" alt="Chassisbrouillon" onclick="openModal(this.src)">
+            <img class="clickable-img" src="chassisdurobot.jpg" alt="chassisdébut" onclick="openModal(this.src)">
+            <img class="clickable-img" src="diagramme.jpg" alt="diagrammebbd" onclick="openModal(this.src)">
+            <img class="clickable-img" src="diagramme_exigence.jpg" alt="diagramme exigence" onclick="openModal(this.src)">
+        </div>
+    </div>
+    <div class="projets-section">
+        <h3>Projet Portfolio</h3>
+        <p class="projet-description">Nous avions comme devoir de créer un site, puis d'ajouter deux pages supplémentaires (trois pages au total), et d'y ajouter du CSS pour rendre le site plus agréable à voir. Enfin, nous devions utiliser des templates, ce sont des modèles qu'on peut utiliser pour créer un portfolio, comme le miens ici présent que vous êtes en train de lire !</p>
+    </div>
+    <div class="projets-section">
+        <h3>Projet à venir</h3>
+        <p class="projet-description">D'autres projets seront ajoutés prochainement</p>
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'flex';
+            modalImg.src = src;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

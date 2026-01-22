@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!-- Encodage -->
+    <title>Mes projets</title> <!-- Titre onglet -->
+    <link rel="stylesheet" href="style-projets.css"> <!-- CSS de la page projets -->
+</head>
+<body>
+    <!-- Bouton retour -->
+    <button class="btn-retour" onclick="window.location.href='index.html'">← Retour</button>
+
+    <h1 class="size">Mes projets</h1> <!-- Titre -->
+
+    <!-- Conteneur principal des projets -->
+    <div class="projets-container">
+
+        <!-- Projet 1 -->
+        <div class="projet-item">
+            <h2>Projet RoboCup – 1STI2D</h2>
+            <p>
+                En début d'année, nous avions comme projet de créer un robot capable de suivre une ligne, d'éviter des obstacles et de respecter les différentes contraintes appliquées dans le règlement. Nous avons dû schématiser le châssis du robot sur SolidWorks, trouver les noms des capteurs, comprendre à quoi ils servent et les faire fonctionner en les codant. Nous avons également dû réussir le câblage, tout souder sur le châssis et faire en sorte que le robot puisse réaliser les différentes étapes de la RoboCup.
+            </p>
+
+            <!-- Galerie d'images cliquables -->
+            <div class="galerie">
+                <img class="clickable-img" src="chassis.jpg" alt="Chassisbrouillon" onclick="openModal(this.src)">
+                <img class="clickable-img" src="chassisdurobot.jpg" alt="chassisdébut" onclick="openModal(this.src)">
+                <img class="clickable-img" src="diagramme.jpg" alt="diagrammebbd" onclick="openModal(this.src)">
+                <img class="clickable-img" src="diagramme_exigence.jpg" alt="diagramme exigence" onclick="openModal(this.src)">
+            </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="projet-item">
+            <h2>Projet Portfolio</h2>
+            <p>
+                Nous avions comme devoir de créer un site, puis d'ajouter deux pages supplémentaires (trois pages au total), et d'y ajouter du CSS pour rendre le site plus agréable à voir. Enfin, nous devions utiliser des templates, ce sont des modèles qu'on peut utiliser pour créer un portfolio, comme le miens ici présent que vous êtes en train de lire !
+            </p>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="projet-item">
+            <h2>Projet à venir</h2>
+            <p>D'autres projets seront ajoutés prochainement</p>
+        </div>
+    </div>
+
+    <!-- Modal : image en grand -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span> <!-- Croix -->
+        <img class="modal-content" id="modalImage"> <!-- Image affichée -->
+    </div>
+
+    <!-- Script pour ouvrir/fermer la modal -->
+    <script>
+        function openModal(src) {
+            const modal = document.getElementById('imageModal'); // Récupère la modal
+            const modalImg = document.getElementById('modalImage'); // Récupère l'image
+            modal.style.display = 'flex'; // Affiche la modal
+            modalImg.src = src; // Met la bonne image
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal'); // Récupère la modal
+            modal.style.display = 'none'; // Cache la modal
+        }
+    </script>
+</body>
+</html>

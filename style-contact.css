@@ -1,0 +1,87 @@
+body {
+    height: auto; /* Hauteur selon contenu */
+    min-height: 100vh; /* Minimum écran */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* En colonne */
+    margin: 0; /* Pas de marge navigateur */
+    background-image: url("arriereplan.png"); /* Fond */
+    background-size: cover; /* Couvre */
+    background-position: center; /* Centre */
+    background-attachment: fixed; /* Fixe au scroll */
+    background-repeat: no-repeat; /* Pas de répétition */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police */
+    padding: 40px; /* Espace intérieur */
+}
+
+.size {
+    color: rgb(67, 162, 67); /* Couleur */
+    font-size: 56px; /* Taille */
+    text-align: center; /* Centre */
+    margin: 40px 0 10px 0; /* Marges */
+}
+
+.subtitle {
+    text-align: center; /* Centre */
+    font-size: 20px; /* Taille */
+    margin: 0 0 40px 0; /* Marge bas */
+}
+
+.btn-retour {
+    position: fixed; /* Fixé */
+    bottom: 30px; /* Bas */
+    left: 20px; /* Gauche */
+    padding: 12px 24px; /* Espace intérieur */
+    font-size: 16px; /* Taille */
+    background-color: rgb(67, 162, 67); /* Fond */
+    color: white; /* Texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Arrondi */
+    cursor: pointer; /* Main */
+}
+
+.btn-retour:hover {
+    background-color: rgb(50, 130, 50); /* Survol */
+}
+
+.contact-container {
+    max-width: 500px; /* Largeur max */
+    margin: 0 auto; /* Centre le bloc */
+}
+
+.contact-container h2 {
+    color: rgb(67, 162, 67); /* Couleur */
+    font-size: 24px; /* Taille */
+    margin: 0 0 30px 0; /* Marges */
+    text-align: center; /* Centre */
+}
+
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc transparent */
+    padding: 20px; /* Espace intérieur */
+    margin-bottom: 20px; /* Espace entre blocs */
+    border-radius: 8px; /* Arrondi */
+    border-left: 4px solid rgb(67, 162, 67); /* Barre verte à gauche */
+}
+
+.contact-info h3 {
+    color: rgb(67, 162, 67); /* Couleur */
+    font-size: 18px; /* Taille */
+    margin: 0 0 10px 0; /* Espace sous */
+}
+
+.contact-info a {
+    color: black; /* Couleur lien */
+    text-decoration: none; /* Enlève le soulignement */
+    font-size: 16px; /* Taille */
+}
+
+.contact-info a:hover {
+    color: rgb(67, 162, 67); /* Vert au survol */
+    text-decoration: underline; /* Souligné au survol */
+}
+
+.contact-info p {
+    color: black; /* Couleur */
+    font-size: 16px; /* Taille */
+    margin: 0; /* Pas de marge */
+}
